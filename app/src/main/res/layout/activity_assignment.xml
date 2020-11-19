@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssignmentActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/back"
+            android:src="@drawable/ic_arrow_back_black_24dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textColor="@color/endblue"
+                android:text="Assignments"/>
+            <View
+                android:layout_width="160dp"
+                android:layout_height="2dp"
+                android:background="@color/endblue"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stream :"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+            <EditText
+                android:id="@+id/stream"
+                android:padding="5dp"
+                android:inputType="text"
+                android:background="@drawable/strokeboarder"
+                android:layout_width="100dp"
+                android:layout_height="35dp" />
+            <Spinner
+                android:id="@+id/streamspinner"
+                android:layout_width="100dp"
+                android:layout_height="35dp">
+
+            </Spinner>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AC Year :"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+            <EditText
+                android:id="@+id/year"
+                android:padding="5dp"
+                android:background="@drawable/strokeboarder"
+                android:layout_width="100dp"
+                android:layout_height="35dp" />
+            <Spinner
+                android:id="@+id/yearspinner"
+                android:layout_width="100dp"
+                android:layout_height="35dp">
+
+            </Spinner>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject Name :"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/subname"
+            android:inputType="textPersonName"
+            android:layout_marginTop="15dp"
+
+            android:background="@drawable/strokeboarder"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject Rank :"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/subrank"
+            android:inputType="textPersonName"
+            android:layout_marginTop="15dp"
+            android:maxLength="2"
+            android:hint="01 , 02 , 03 , 04 , 05 , 06 and 07"
+            android:paddingLeft="5dp"
+            android:background="@drawable/strokeboarder"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lecturer Name :"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/lectname"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/strokeboarder"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Topic Name :"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/topicname"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/strokeboarder"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dead Line :"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/deadline"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/strokeboarder"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Messsage For Students :"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/strokeboarder"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:maxLines="7"
+            android:gravity="top|left"
+            android:scrollbars="vertical"
+            android:paddingLeft="5dp"
+
+            />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbar"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+             android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/send"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/background"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+</ScrollView>

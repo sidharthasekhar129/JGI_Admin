@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudyMaterials">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/outpasst1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suggestion"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="130dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/endblue" />
+
+
+      <TextView
+          android:id="@+id/pdfname"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:textSize="18sp"
+          android:layout_marginTop="15dp"
+          />
+        <EditText
+            android:id="@+id/subjectname"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="5dp"
+            android:hint="Subject Name"
+            android:background="@drawable/strokeboarder"
+            android:layout_marginTop="15dp"/>
+        <EditText
+            android:id="@+id/subjectrank"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="5dp"
+            android:hint="Suject Rank"
+            android:background="@drawable/strokeboarder"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/materialname"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/strokeboarder"
+            android:hint="Material Name"
+            android:paddingLeft="5dp" />
+        <EditText
+            android:id="@+id/materialno"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/strokeboarder"
+            android:hint="Material No."
+            android:paddingLeft="5dp" />
+        <EditText
+            android:id="@+id/stream"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:maxLength="4"
+            android:background="@drawable/strokeboarder"
+            android:hint="Stream MACT/CTIS.."
+            android:paddingLeft="5dp" />
+        <EditText
+            android:id="@+id/academic_year"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:maxLength="9"
+            android:background="@drawable/strokeboarder"
+            android:hint="Academic_year"
+            android:paddingLeft="5dp" />
+        <Button
+            android:id="@+id/selectfile"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="select"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background"
+            android:layout_gravity="center"
+             />
+        <Button
+            android:id="@+id/send"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            />
+
+    </LinearLayout>
+</ScrollView>
